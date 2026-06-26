@@ -73,8 +73,8 @@ if __name__ == "__main__":
     "Historico-Pilha-Array",
     "Historico-Pilha-Lista",
 
-    "Fila-Impressao-Array",
-    "Fila-Impressao-Lista",
+    "Fila-Senha-Array",
+    "Fila-Senha-Lista",
 
     "Playlist-Lista-Array",
     "Playlist-Lista-Ligada",
