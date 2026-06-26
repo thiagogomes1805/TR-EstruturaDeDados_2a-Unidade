@@ -56,9 +56,9 @@ def executaExperimento(nome, numeros, funcao):
 
     for n in numeros:
 
-        # Não é contabilizado na medição do tempo
-        if n % 10 == 0:
-            print(f"[{nome}] Execução {n} de {numeros[-1]}")
+        if n % 100 == 0:
+
+            print(f"Executando {nome}: {n}")
 
         resultado.append(medirTempo(funcao, n))
 
@@ -73,8 +73,8 @@ if __name__ == "__main__":
     "Historico-Pilha-Array",
     "Historico-Pilha-Lista",
 
-    "Fila-Senha-Array",
-    "Fila-Senha-Lista",
+    "Fila-Impressao-Array",
+    "Fila-Impressao-Lista",
 
     "Playlist-Lista-Array",
     "Playlist-Lista-Ligada",
