@@ -16,6 +16,7 @@ class Array():
         """Capacity is the static size of the array.
         fillValue is placed at each position."""
         self.items = list()
+        self.logicalSize = 0
         for count in range(capacity):
             self.items.append(fillValue)
     
@@ -48,7 +49,7 @@ class Array():
         self.items = temp.items # atualiza a variável do array antigo.
     
     def decreaseSize(self):
-        if self.logicalSize <= len(self.items) // 4 and len(self.items) >= self.DEFAULT_CAPACITY * 2:
+        if self.logicalSize <= len(self.items) // 2 and len(self.items) >= self.DEFAULT_CAPACITY * 2:
             temp = Array(len(self.items) // 2) # Cria um novo array menor
             for i in range(self.logicalSize): # percorre o array
                 temp [i] = self.items[i] # copia os dados

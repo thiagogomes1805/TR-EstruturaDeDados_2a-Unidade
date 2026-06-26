@@ -56,9 +56,9 @@ def executaExperimento(nome, numeros, funcao):
 
     for n in numeros:
 
-        if n % 100 == 0:
-
-            print(f"Executando {nome}: {n}")
+        # Não é contabilizado na medição do tempo
+        if n % 10 == 0:
+            print(f"[{nome}] Execução {n} de {numeros[-1]}")
 
         resultado.append(medirTempo(funcao, n))
 
