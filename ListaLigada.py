@@ -1,2 +1,7 @@
+from estruturas.LinkedList import LinkedList
+
+# Playlist de músicas
 def playlist(n):
-    print("não implementado")
+    lista_musicas = LinkedList()
+    for i in range(n):
+        lista_musicas.insertAtLast(i)

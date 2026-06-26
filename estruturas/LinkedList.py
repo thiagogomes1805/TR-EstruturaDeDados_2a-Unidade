@@ -3,7 +3,7 @@ File: node.py
 Original Author: Ken Lambert (Fundamentals of Python Data Structure)
 Adapted by: Arthur Souza
 """
-from Node import Node
+from estruturas.Node import Node
 class LinkedList():
 
 
