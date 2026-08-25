@@ -1,4 +1,4 @@
-### Experimental Algorithm Analysis
+# Experimental Algorithm Analysis
 Experimental analysis of algorithmic time complexity developed for the Algorithms and Data Structures coursework.
 This project analyzes the empirical performance of algorithms through execution time measurement and graph plotting.
 
@@ -24,14 +24,14 @@ pip install matplotlib
 
 The experiment execution is managed by ExecExperimento.py
 
-# Running in the Terminal
+### Running in the Terminal
 Open the terminal, navigate to the project directory, and execute:
 python3 ExecExperimento.py
 
-# Running in VSCode
+### Running in VSCode
 Open the project folder in VSCode and execute ExecExperimento.py
 
-# Execution Example
+### Execution Example
 The experiment runs sequential tests with inputs ranging from 0 to [n] for the selected algorithm. For example, running Fatorial-Iterativo:
 
 python ExecExperimento.py
@@ -53,7 +53,7 @@ When running Fatorial-Iterativo with n=10, the algorithm executes 11 times (from
 
 ALERT: For n=10000, the algorithm will execute 10001 times, which may take significant time depending on your machine.
 
-# How to Run Experiments
+### How to Run Experiments
 Determine the maximum input value supported by your hardware:
 
 Fibonacci-Recursivo: test values [10, 20, 30, 40].
@@ -61,7 +61,7 @@ Fibonacci-Recursivo: test values [10, 20, 30, 40].
 OrdenacaoN2-Recursivo: test [5000, 7000, 9000, 10000].
 If a maximum recursion depth error occurs, use the previous value as the limit.
 
-# Factorial and Fibonacci Experiments
+### Factorial and Fibonacci Experiments
 Run ExecExperimento.py for the maximum input of:
 
 Fatorial-Iterativo
@@ -72,7 +72,7 @@ Fibonacci-Iterativo
 
 Fibonacci-Recursivo
 
-# Sorting Experiments
+### Sorting Experiments
 Run ExecExperimento.py for the sorting algorithms:
 
 OrdenacaoN2-Iterativo
@@ -85,11 +85,11 @@ OrdenacaoNLog-Recursivo
 
 Test: Run all list variations (sorted, unsorted, reverse sorted); each generates an output file in the "resultados" folder.
 
-# Plotting Charts
+### Plotting Charts
 Run PlotaGrafico.py in the terminal passing [chart title] [file01] [file02] ... as arguments:
 
 python3 PlotaGrafico.py "Fibonacci vs Factorial" resultados/Fibonacci-Iterativo.res resultados/Fibonacci-Recursivo.res resultados/Fatorial-Iterativo.res resultados/Fatorial-Recursivo.res
 
-Author
+### Author
 Thiago Gomes de Oliveira
 thiago.oliveira.712@ufrn.edu.br
